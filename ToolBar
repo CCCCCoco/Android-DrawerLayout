@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/one"
+    android:icon="@mipmap/ic_launcher"
+    android:title="one"
+    app:showAsAction="always"/> <!-- ToolBar中的action按钮只会显示图标，菜单中action按钮只会显示文字-->
+
+    <item
+        android:id="@+id/two"
+        android:icon="@mipmap/ic_launcher"
+        android:title="two"
+        app:showAsAction="ifRoom"/><!--如果有空间显示图标，否则在菜单中显示文字-->
+
+    <item
+        android:id="@+id/three"
+        android:icon="@mipmap/ic_launcher"
+        android:title="three"
+        app:showAsAction="never"/> <!-- 只在菜单中显示文字 -->
+</menu>
