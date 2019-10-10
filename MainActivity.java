@@ -32,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setHomeAsUpIndicator(R.drawable.icon1); //修改HomeAsUp按钮图标，默认“←”
         }
         //--------------------------------------------------------------------//
+        //对header菜单进行逻辑编码
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                mDrawerLayout.closeDrawers();
+                return true;
+            }
+        });
+         //--------------------------------------------------------------------//
     }
 
     @Override
