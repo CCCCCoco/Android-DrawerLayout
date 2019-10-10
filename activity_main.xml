@@ -25,14 +25,15 @@
             tools:layout_editor_absoluteY="2dp" />
 
     </FrameLayout>
-<!--    layout_gravity-必须指定属性-->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    
+<!-- Material Design   -->
+<com.google.android.material.navigation.NavigationView
+        android:id = "@+id/nav_view"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
         android:layout_gravity = "start"
-        android:text="TextView"
-        android:background="#FFF"/> <!--白色-->
+        app:menu = "@menu/nav_menu"
+        app:headerLayout = "@layout/header"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
 <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
